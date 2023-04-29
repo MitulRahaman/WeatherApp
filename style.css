@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #261a33;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 85%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #261a33;
+    box-shadow: 0 0 6px #808080;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.search-box button {
+    width: 33px;
+    height: 33px;
+    background-color: #a99696;
+    box-shadow: 0 0 6px #808080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    color: aliceblue;
+    background-color: #f4e6e6;
+    box-shadow: 0 0 10px #808080;
+}
+
+.weather-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather-body img{
+    width: 60%;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+    .weather-box .temp {
+        font-size: 40px;
+        font-weight: 700;
+        position: relative;
+        color: #808080;
+    }
+
+.weather-box .temp sup {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.weather-box .desc {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #808080;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+    color: #808080;
+}
+.humidity{
+    margin-left: 12px;
+}
+.wind{
+    margin-right: 12px;
+}
+
+.weather-details img{
+    width: 60px
+}
+.weather-details .text {
+    font-size: 13px;
+    margin-left: 10px;
+}
+.text span{
+    font-size: 18px;
+    font-weight: 600;
+}
